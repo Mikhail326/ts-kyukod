@@ -1,0 +1,150 @@
+.banner {
+  min-height: 100vh;
+  background-image: url("../img/bg-main.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &-wrapper {
+    & p {
+      margin: 0 auto 150px auto;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      max-width: 590px;
+
+      @media (max-width: 1024px) {
+        font-size: 27px;
+        max-width: 390px;
+        margin: 0 auto 250px auto;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+        max-width: 290px;
+      }
+    }
+  }
+
+  &-btn {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(36, 13, 104, 0.27);
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 60px;
+
+    &:hover::before {
+      animation: pulse-1 1s ease-out infinite;
+    }
+    &:hover::after {
+      animation: pulse-2 1s ease-out infinite;
+    }
+
+    &:hover .banner-btn_wrapper-icon {
+      top: calc(100% + 20px);
+    }
+
+    @media (max-width: 1024px) {
+      width: 150px;
+      height: 150px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgba(36, 13, 104, 0.27);
+      border-radius: 50%;
+    }
+
+    &::before {
+      width: 260px;
+      height: 260px;
+      top: -20px;
+      left: -20px;
+
+      @media (max-width: 1024px) {
+        width: 180px;
+        height: 180px;
+        top: -15px;
+        left: -15px;
+      }
+    }
+
+    &::after {
+      width: 300px;
+      height: 300px;
+      top: -40px;
+      left: -40px;
+
+      @media (max-width: 1024px) {
+        width: 210px;
+        height: 210px;
+        top: -30px;
+        left: -30px;
+      }
+    }
+
+    &_wrapper {
+      position: relative;
+      & span,
+      &-icon {
+        z-index: 10;
+      }
+
+      &-icon {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: calc(50% - 12px);
+        transition: 0.2s ease-out;
+
+        & svg {
+          @media (max-width: 1024px) {
+            width: 17px;
+            height: 18px;
+          }
+        }
+      }
+
+      & span {
+        position: relative;
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 50px;
+
+        @media (max-width: 1024px) {
+          font-size: 25px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulse-1 {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-2 {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

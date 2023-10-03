@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+  color: var(--white);
+  background-color: var(--bg);
+  font-size: 17px;
+}
+
+:root {
+  --white: #fff;
+  --bg: #030a1d;
+  --light: #7bd0ff;
+  --btn-1: #0f64fb;
+  --btn-2: #fb2b0f;
+  --box-s-btn: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Racing Sans One", cursive;
+  font-size: 155px;
+  font-weight: 400;
+  text-shadow: 17px 29px #070a53;
+  margin-bottom: 50px;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    font-size: 110px;
+    text-shadow: 9px 18px #070a53;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 71px;
+    text-shadow: 6px 12px #070a53;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 45px;
+    text-shadow: 5px 9px #070a53;
+  }
+}
