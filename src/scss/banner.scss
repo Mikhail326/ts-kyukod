@@ -1,12 +1,16 @@
 .banner {
   min-height: 100vh;
-  background-image: url("../img/bg-main.png");
+  background-image: url("../img/Group\ 1671.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+
+  @media (max-width: 991px) {
+    align-items: center;
+  }
 
   &-wrapper {
     & p {

@@ -13,11 +13,13 @@ body {
   color: var(--white);
   background-color: var(--bg);
   font-size: 17px;
+  overflow-x: hidden;
 }
 
 :root {
   --white: #fff;
   --bg: #030a1d;
+  --dark: #040723;
   --light: #7bd0ff;
   --btn-1: #0f64fb;
   --btn-2: #fb2b0f;
@@ -67,4 +69,67 @@ h1 {
     font-size: 45px;
     text-shadow: 5px 9px #070a53;
   }
+}
+
+h2 {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 150px 0;
+
+  @media (max-width: 991px) {
+    font-size: 35px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 27px;
+  }
+}
+
+h3 {
+  color: var(--light);
+  font-size: 36px;
+  font-weight: 700;
+
+  @media (max-width: 480px) {
+    font-size: 27px;
+  }
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.btn-1,
+.btn-2 {
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px 25px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-align: center;
+  cursor: pointer;
+
+  @media (max-width: 480px) {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.btn-1 {
+  background-color: var(--btn-1);
+}
+.btn-2 {
+  background-color: var(--btn-2);
+}
+
+.section-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
