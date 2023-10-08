@@ -47,17 +47,32 @@ a {
   text-decoration: none;
 }
 
+button,
+input {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 h1 {
   font-family: "Racing Sans One", cursive;
   font-size: 155px;
   font-weight: 400;
   text-shadow: 17px 29px #070a53;
+  margin-top: 200px;
   margin-bottom: 50px;
   text-align: center;
 
   @media (max-width: 1024px) {
     font-size: 110px;
     text-shadow: 9px 18px #070a53;
+  }
+
+  @media (max-width: 991px) {
+    margin-top: 110px;
   }
 
   @media (max-width: 768px) {
@@ -84,6 +99,7 @@ h2 {
 
   @media (max-width: 480px) {
     font-size: 27px;
+    margin: 70px 0;
   }
 }
 
@@ -128,8 +144,16 @@ h3 {
 
 .section-bg {
   position: absolute;
-  top: 0;
+  top: -140px;
   left: 0;
   width: 100%;
   z-index: -1;
+
+  @media (max-width: 1400px) {
+    top: 140px;
+  }
+
+  @media (max-width: 991px) {
+    display: none;
+  }
 }

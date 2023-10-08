@@ -5,8 +5,8 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
 
   @media (max-width: 991px) {
     align-items: center;
@@ -29,6 +29,7 @@
       @media (max-width: 768px) {
         font-size: 20px;
         max-width: 290px;
+        margin: 0 auto 150px auto;
       }
     }
   }

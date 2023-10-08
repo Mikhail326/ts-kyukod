@@ -1,5 +1,28 @@
 <section class="rates">
   <div class="container">
     <h2>Тарифы</h2>
+    <div class="rates-list"></div>
+    <img class="rates-bg" src="../img/rates-img-bg.png" alt="img">
+    <div class="rates-price">
+      <div class="rates-price_content">
+        <form class="rates-form" method="POST">
+          <input class="rates-form_input" type="text" placeholder="Введите количество человек">
+          <button class="rates-form_btn" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.74131 1.55962C5.84224 0.511752 4.26393 0.391127 3.21606 1.2902C2.16819 2.18927 2.04756 3.76758 2.94663 4.81545L14.8864 18.7313L3.5902 17.8679C2.21351 17.7627 1.01218 18.7935 0.906962 20.1702C0.801746 21.5469 1.83249 22.7482 3.20918 22.8534L20.1626 24.1491L22.6554 24.3396L22.8459 21.8469L22.8721 21.5036C22.8731 21.492 22.874 21.4804 22.8748 21.4688L24.1416 4.8934C24.2468 3.51671 23.2161 2.31538 21.8394 2.21016C20.4627 2.10495 19.2613 3.13569 19.1561 4.51238L18.3479 15.0872L6.74131 1.55962Z"
+                fill="white" />
+            </svg>
+          </button>
+        </form>
+        <div>
+          <span>Стоимость тарифа:</span>
+          <span id="price"></span>
+        </div>
+      </div>
+      <div class="rates-price_img">
+        <img src="../img/rates-img.png" alt="img">
+      </div>
+    </div>
   </div>
 </section>
